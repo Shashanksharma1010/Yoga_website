@@ -164,7 +164,7 @@ nav ul li a:hover {
     bottom:0;
     right:0;
     background-color: var(--BackgroundShade1);
-    opacity: 0.9;
+    opacity: 0.93;
     z-index:10;
     animation-name:slide;
     animation-duration: 0.5s;
