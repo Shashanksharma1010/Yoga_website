@@ -407,6 +407,50 @@ nav ul li a:hover {
 
 
 
+
+/* Treatment for diseases section */
+.treatment {
+    background-color: var(--BackgroundShade1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.treatment div {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding:10px;
+    margin: 10px;
+    background-color:var(--newShade2);
+    color:var(--shade);
+}
+
+.treatment h1 {
+    padding:10px;
+    margin: 10px;
+    flex: 0 0 100%; /* flex-grow, flex-shrink, flex-basis */
+    color:var(--shade);
+}
+
+.treatment div h4 {
+    padding: 10px;
+}
+
+.treatment div #treateament-logo {
+    background: var(--mainColor);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+
+
 /* Videos Section  */
 
 /* using newShade color theme */
@@ -939,42 +983,3 @@ nav ul li a:hover {
     background-color: var(--newShade2);
 }
 
-/* Treatment for diseases */
-.treatment {
-    background-color: var(--BackgroundShade1);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 50px;
-    justify-content: center;
-    align-items: center;
-}
-
-.treatment div {
-    display: flex;
-    width: 300px;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    padding:10px;
-    margin: 10px;
-    background-color:var(--newShade2);
-    color:var(--shade);
-}
-
-.treatment h1 {
-    padding:10px;
-    margin: 10px;
-    flex: 0 0 100%; /* flex-grow, flex-shrink, flex-basis */
-    color:var(--shade);
-}
-
-.treatment div h4 {
-    padding: 10px;
-}
-
-.treatment div #treateament-logo {
-    background: var(--mainColor);
-    padding: 5px;
-    border-radius: 10px;
-}
