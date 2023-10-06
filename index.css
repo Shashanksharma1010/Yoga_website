@@ -61,6 +61,10 @@ section,div, nav {
     transition: all 1s;
 }
 
+
+
+
+
 /* Navbar section */
 
 nav {
@@ -163,7 +167,7 @@ nav ul li a:hover {
     opacity: 0.9;
     z-index:10;
     animation-name:slide;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
 }
 
 #mobile-nav-menu div {
@@ -205,12 +209,15 @@ nav ul li a:hover {
   }
 
 
+
+
+
 /* Theme-switcher */
 .theme-switcher {
     position: fixed;
     width: 60%;
     bottom:0;
-    border-radius: 20px;
+    border-radius: 50px;
     margin:5px;
     box-shadow: 0 10px 10px 2px rgba(0,0,0,0.1);
     z-index: 10;
@@ -268,6 +275,10 @@ nav ul li a:hover {
         display: block;
     }
 }
+
+
+
+
 
 /* Banner Section */
 
@@ -382,7 +393,6 @@ nav ul li a:hover {
     }
 }
 
-
 /* Button Hover Effect For Navbar and Banner Section*/
 
 .nav-button:hover, .banner-section div button:hover  {
@@ -393,6 +403,7 @@ nav ul li a:hover {
     transition: opacity 1000ms linear;
     transition: all ease 0.5s;
 }
+
 
 
 
@@ -409,10 +420,10 @@ nav ul li a:hover {
     margin: auto;
     padding: 3rem;
     /* font-weight: 800; */
-    color: var(--designTextColor);
+    color: var(--shade);
 }
 
-.video-container p {
+.video-container h6 {
     text-align: center;
     border:3px solid black;
     background: var(--designTextColor);
@@ -445,7 +456,14 @@ nav ul li a:hover {
     transition: all ease 0.5s;
 }
 
-.video-card h6 {
+.video-card video {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+
+}
+
+.video-card p {
     color: var(--shade);
 }
 
@@ -461,6 +479,7 @@ nav ul li a:hover {
         width:100%;
     }
     }
+
     
 
 
@@ -834,10 +853,14 @@ nav ul li a:hover {
 }
 
 .details > p {
-    color: #a0a0a0;
+    color: var(--shade);
     line-height: 30px;
     font-weight: 400;
 }
+
+
+
+
 
 /* social links handle */
 
@@ -904,8 +927,9 @@ nav ul li a:hover {
 .footer .watermark {
     width: 100%;
     text-align: center;
+    padding:10px;
     border-radius: 5px;
-    box-shadow: 0px 10px 9px 0px rgba(0,0,0,0.24);
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
     background-color: var(--newShade);
     color:var(--shade);
 }
@@ -913,4 +937,44 @@ nav ul li a:hover {
 /* end */
 .end {
     background-color: var(--newShade2);
+}
+
+/* Treatment for diseases */
+.treatment {
+    background-color: var(--BackgroundShade1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.treatment div {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding:10px;
+    margin: 10px;
+    background-color:var(--newShade2);
+    color:var(--shade);
+}
+
+.treatment h1 {
+    padding:10px;
+    margin: 10px;
+    flex: 0 0 100%; /* flex-grow, flex-shrink, flex-basis */
+    color:var(--shade);
+}
+
+.treatment div h4 {
+    padding: 10px;
+}
+
+.treatment div #treateament-logo {
+    background: var(--mainColor);
+    padding: 5px;
+    border-radius: 10px;
 }
